@@ -1,10 +1,10 @@
-# E-Commerce and Calculator Sandbox Project
-## This repository contains two independent, modular Python applications demonstrating clean architecture and SOLID design principles.
-## The e-commerce module implements domain models (Product, Cart, CartItem) and a service layer to manage user carts.
-## It utilizes repository patterns with an abstract interface (CartRepo) and an in-memory database implementation (InMemoCartRepo).
-## Unit and integration tests verify the shopping cart's workflows, including adding, updating, and removing items in the cart.
-## The Calc directory contains calculator applications showcasing SRP, OCP, and separation of UI from execution logic.
-## Within Calc, the engine registers operations (addition, division, mod, power) dynamically using an operation factory.
-## Each math operation is encapsulated in its own class, adhering to the Open/Closed Principle for easy extensibility.
-## Overall, this sandbox serves as a reference for applying design patterns like KISS, DRY, and Layered Architecture in Python.
-Run main.py to see the shopping cart simulation, or run Calc/calculator.py/calc2.py for the calculator.
+# E-Commerce Shopping Cart System
+### This repository implements a clean, modular e-commerce shopping cart system in Python.
+### The system is structured using Domain-Driven Design and Separation of Concerns principles.
+### In domain_layer.py, core entities like Product, CartItem, and Cart are defined.
+### Data access is managed through the abstract CartRepo interface in repo_interface.py.
+### An in-memory repository (InMemoCartRepo) simulates database operations and logging.
+### The service_layer.py houses CartService to coordinate adding and removing items.
+### Main execution entry point in main.py executes a mock checkout receipt simulation.
+### Automated unit and integration tests are provided to verify core business logic.
+### Run the shopping cart workflow via python main.py or run unit_test.py and integration_test.py.
