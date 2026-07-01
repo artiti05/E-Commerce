@@ -1,0 +1,11 @@
+# Ignore Calc folder
+Calc/
+
+# Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
