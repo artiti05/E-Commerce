@@ -1,0 +1,75 @@
+[2026-07-06 13:40:29] [INFO] [root]: Logging configuration complete. Log file at logs/app.log
+[2026-07-06 13:40:29] [INFO] [root]: Logging configuration complete. Log file at logs/app.log
+[2026-07-06 13:40:29] [INFO] [app.main]: --- Starting Shopping Cart Application ---
+[2026-07-06 13:40:29] [INFO] [app.main]: Database empty. Seeding initial products...
+[2026-07-06 13:40:29] [INFO] [app.main]: Database seeded successfully.
+[2026-07-06 13:40:29] [INFO] [app.main]: Simulation: Customer 42 starting shopping session.
+[2026-07-06 13:40:29] [DEBUG] [app.service]: Entering add_product: customer_id=42, product_id=1, qty=1
+[2026-07-06 13:40:29] [DEBUG] [app.repository]: [SQLite] Fetching cart for customer_id 42
+[2026-07-06 13:40:29] [DEBUG] [app.repository]: [SQLite] No cart found in DB for customer_id 42. Creating new empty Cart.
+[2026-07-06 13:40:29] [DEBUG] [app.repository]: [SQLite] Saving cart for customer_id 42
+[2026-07-06 13:40:29] [INFO] [app.repository]: [Database Log] Cart saved successfully in SQLite for Customer 42
+[2026-07-06 13:40:29] [INFO] [app.service]: Customer 42 successfully added Product Laptop (Qty: 1) to cart.
+[2026-07-06 13:40:29] [DEBUG] [app.service]: Current cart total price for customer 42 is $1200.00
+[2026-07-06 13:40:29] [DEBUG] [app.service]: Entering add_product: customer_id=42, product_id=2, qty=2
+[2026-07-06 13:40:29] [DEBUG] [app.repository]: [SQLite] Fetching cart for customer_id 42
+[2026-07-06 13:40:29] [DEBUG] [app.repository]: [SQLite] Saving cart for customer_id 42
+[2026-07-06 13:40:29] [INFO] [app.repository]: [Database Log] Cart saved successfully in SQLite for Customer 42
+[2026-07-06 13:40:29] [INFO] [app.service]: Customer 42 successfully added Product Wireless Mouse (Qty: 2) to cart.
+[2026-07-06 13:40:29] [DEBUG] [app.service]: Current cart total price for customer 42 is $1300.00
+[2026-07-06 13:40:29] [DEBUG] [app.service]: Entering remove_product: customer_id=42, product_id=2
+[2026-07-06 13:40:29] [DEBUG] [app.repository]: [SQLite] Fetching cart for customer_id 42
+[2026-07-06 13:40:29] [DEBUG] [app.repository]: [SQLite] Saving cart for customer_id 42
+[2026-07-06 13:40:29] [INFO] [app.repository]: [Database Log] Cart saved successfully in SQLite for Customer 42
+[2026-07-06 13:40:29] [INFO] [app.service]: Customer 42 successfully removed Product 2 from cart.
+[2026-07-06 13:40:29] [DEBUG] [app.service]: Current cart total price for customer 42 is $1200.00
+[2026-07-06 13:40:29] [DEBUG] [app.service]: Entering add_product: customer_id=42, product_id=3, qty=1
+[2026-07-06 13:40:29] [DEBUG] [app.repository]: [SQLite] Fetching cart for customer_id 42
+[2026-07-06 13:40:29] [DEBUG] [app.repository]: [SQLite] Saving cart for customer_id 42
+[2026-07-06 13:40:29] [INFO] [app.repository]: [Database Log] Cart saved successfully in SQLite for Customer 42
+[2026-07-06 13:40:29] [INFO] [app.service]: Customer 42 successfully added Product Mechanical Keyboard (Qty: 1) to cart.
+[2026-07-06 13:40:29] [DEBUG] [app.service]: Current cart total price for customer 42 is $1350.00
+[2026-07-06 13:40:29] [DEBUG] [app.repository]: [SQLite] Fetching cart for customer_id 42
+[2026-07-06 14:48:15] [INFO] [root]: Logging configuration complete. Log file at logs/app.log
+[2026-07-06 14:48:15] [INFO] [root]: Logging configuration complete. Log file at logs/app.log
+[2026-07-06 14:48:15] [INFO] [app.main]: --- Starting Shopping Cart Application ---
+[2026-07-06 14:48:15] [INFO] [app.main]: Database empty. Seeding initial products...
+[2026-07-06 14:48:15] [INFO] [app.main]: Database seeded successfully.
+[2026-07-06 14:48:15] [INFO] [app.main]: Simulation: Customer 42 starting shopping session.
+[2026-07-06 14:48:15] [DEBUG] [app.service]: Entering add_product: customer_id=42, product_id=1, qty=1
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Fetching product 1 from catalog
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Fetching cart for customer_id 42
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] No cart found in DB for customer_id 42. Creating new empty Cart.
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Saving cart for customer_id 42
+[2026-07-06 14:48:15] [INFO] [app.repository]: [Database Log] Cart saved successfully in SQLite for Customer 42
+[2026-07-06 14:48:15] [INFO] [app.service]: Customer 42 successfully added Product Laptop (Qty: 1) to cart.
+[2026-07-06 14:48:15] [DEBUG] [app.service]: Current cart total price for customer 42 is $1200.00
+[2026-07-06 14:48:15] [DEBUG] [app.service]: Entering add_product: customer_id=42, product_id=2, qty=2
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Fetching product 2 from catalog
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Fetching cart for customer_id 42
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Saving cart for customer_id 42
+[2026-07-06 14:48:15] [INFO] [app.repository]: [Database Log] Cart saved successfully in SQLite for Customer 42
+[2026-07-06 14:48:15] [INFO] [app.service]: Customer 42 successfully added Product Wireless Mouse (Qty: 2) to cart.
+[2026-07-06 14:48:15] [DEBUG] [app.service]: Current cart total price for customer 42 is $1300.00
+[2026-07-06 14:48:15] [DEBUG] [app.service]: Entering remove_product: customer_id=42, product_id=2
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Fetching cart for customer_id 42
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Saving cart for customer_id 42
+[2026-07-06 14:48:15] [INFO] [app.repository]: [Database Log] Cart saved successfully in SQLite for Customer 42
+[2026-07-06 14:48:15] [INFO] [app.service]: Customer 42 successfully removed Product 2 from cart.
+[2026-07-06 14:48:15] [DEBUG] [app.service]: Current cart total price for customer 42 is $1200.00
+[2026-07-06 14:48:15] [DEBUG] [app.service]: Entering add_product: customer_id=42, product_id=3, qty=1
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Fetching product 3 from catalog
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Fetching cart for customer_id 42
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Saving cart for customer_id 42
+[2026-07-06 14:48:15] [INFO] [app.repository]: [Database Log] Cart saved successfully in SQLite for Customer 42
+[2026-07-06 14:48:15] [INFO] [app.service]: Customer 42 successfully added Product Mechanical Keyboard (Qty: 1) to cart.
+[2026-07-06 14:48:15] [DEBUG] [app.service]: Current cart total price for customer 42 is $1350.00
+[2026-07-06 14:48:15] [DEBUG] [app.repository]: [SQLite] Fetching cart for customer_id 42
+[2026-07-06 15:00:19] [INFO] [root]: Logging configuration complete. Log file at logs/app.log
+[2026-07-06 15:00:19] [INFO] [root]: Logging configuration complete. Log file at logs/app.log
+[2026-07-06 15:01:07] [DEBUG] [app.service]: Admin action: adding product 1 (Laptop) to catalog
+[2026-07-06 15:01:07] [DEBUG] [app.repository]: [SQLite] Saving product 1 to catalog
+[2026-07-06 15:01:07] [INFO] [app.repository]: [Database Log] Product 1 (Laptop) saved in database catalog.
+[2026-07-06 15:01:07] [INFO] [app.service]: [Admin Log] Added Product 1 (Laptop) with price $800 and stock 10 to the catalog.
+[2026-07-06 15:01:19] [DEBUG] [app.service]: Fetching catalog list
+[2026-07-06 15:01:19] [DEBUG] [app.repository]: [SQLite] Fetching all products from catalog
