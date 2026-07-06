@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexShop - Premium E-Commerce Dashboard</title>
+    <!-- Modern Google Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="app-header">
+        <div class="logo">
+            <i class="fa-solid fa-cube logo-icon"></i>
+            <span>NEX<strong>SHOP</strong></span>
+        </div>
+        <div class="header-actions">
+            <div class="customer-selector-wrapper">
+                <i class="fa-solid fa-user-tag selector-icon"></i>
+                <select id="customer-select">
+                    <option value="42" selected>Customer #42 (Standard)</option>
+                    <option value="99">Customer #99 (Beta Tester)</option>
+                    <option value="10">Customer #10 (VIP)</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- App Container -->
+    <main class="app-container">
+        <!-- Products Grid Section -->
+        <section class="products-section">
+            <h2 class="section-title">Explore Store Catalog</h2>
+            <div id="products-grid" class="products-grid">
+                <!-- Product cards dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Floating Cart Panel -->
+        <aside class="cart-panel">
+            <div class="cart-header">
+                <h2><i class="fa-solid fa-shopping-cart"></i> Shopping Cart</h2>
+                <span id="cart-item-count" class="cart-count">0</span>
+            </div>
+            
+            <div id="cart-items-list" class="cart-items-list">
+                <!-- Cart items dynamically loaded here -->
+                <div class="empty-cart-state">
+                    <i class="fa-solid fa-basket-shopping empty-icon"></i>
+                    <p>Your cart is empty. Add products to get started.</p>
+                </div>
+            </div>
+
+            <div class="cart-footer">
+                <div class="price-row">
+                    <span>Total Amount</span>
+                    <span id="cart-total-price" class="total-price">$0.00</span>
+                </div>
+                <button id="checkout-btn" class="checkout-btn">
+                    <i class="fa-solid fa-credit-card"></i> Proceed to Checkout
+                </button>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Bottom Real-time Logger Console -->
+    <footer class="app-footer">
+        <div class="console-header">
+            <h3><i class="fa-solid fa-terminal"></i> Backend Operations Audit Feed</h3>
+            <span class="pulse-indicator"></span>
+        </div>
+        <div id="console-logs" class="console-logs">
+            <!-- File logs printed here in real-time -->
+            <div class="log-entry system-log">Waiting for activities...</div>
+        </div>
+    </footer>
+
+    <!-- Toasts Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

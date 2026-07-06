@@ -1,12 +1,17 @@
-# Ignore Calc folder
-Calc/
+venv/
+.venv/
+env/
 
-# Python bytecode and cache
+shopping_cart.db
+logs/
+app.log
+Calc/
+tests/
+
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.pytest_cache/
-.coverage
-htmlcov/
-venv/
+
+.git/
+.gitignore
