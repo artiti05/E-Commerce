@@ -4,8 +4,6 @@ A clean, modular e-commerce shopping cart system built in Python, showcasing Dom
 
 ## Project Structure & File Guide
 
-Below is an explanation of each file in this repository (excluding temporary files and external developer workspaces like `Calc/`):
-
 ### Core Application Files
 * **[domain_layer.py](file:///c:/Users/VICTUS/Desktop/E-Commerce/domain_layer.py)**: Defines the core domain models and business entities:
   * `Product`: A catalog item with a name, price (using `decimal.Decimal`), and stock quantity.
@@ -24,9 +22,6 @@ Below is an explanation of each file in this repository (excluding temporary fil
 ### Testing
 * **[unit_test.py](file:///c:/Users/VICTUS/Desktop/E-Commerce/unit_test.py)**: Runs isolated tests for business operations utilizing a mock/fake repository.
 * **[integration_test.py](file:///c:/Users/VICTUS/Desktop/E-Commerce/integration_test.py)**: Runs end-to-end integration tests using the actual `JsonCartRepo` to verify the persistence layer.
-
-### Infrastructure
-* **[.gitignore](file:///c:/Users/VICTUS/Desktop/E-Commerce/.gitignore)**: Configured to ignore standard Python cache, build dependencies, and temporary developer workspaces (like `Calc/`).
 
 ---
 
