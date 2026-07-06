@@ -55,7 +55,7 @@ class JsonCartRepo(CartRepo):
             items = []
             for item_data in cart_data["items"]:
                 product = Product(
-                    id=item_data["product"]["id"],
+                    product_id=item_data["product"]["id"],
                     name=item_data["product"]["name"],
                     price=decimal.Decimal(item_data["product"]["price"]),
                     qty=item_data["product"]["qty"]

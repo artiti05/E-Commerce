@@ -19,9 +19,9 @@ class CartItem:
         return self.product.price * self.qty 
 
 class Cart:
-    def __init__(self, customer_id:int):
+    def __init__(self, customer_id:int, items:List[CartItem] = []):
         self.customer_id = customer_id
-        self.items:List[CartItem] = []
+        self.items:List[CartItem] = items
     def total_price(self) -> decimal.Decimal:
         return sum(item.get_subtotal() for item in self.items)
     def add_item(self, product: Product, qty:int)-> None:
